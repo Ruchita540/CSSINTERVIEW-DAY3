@@ -1,0 +1,78 @@
+body{
+    background-color: grey;
+}
+button{
+    width: 150px;
+    height: 45px;
+    background-color: rgba(43, 46, 226, 0.596);
+    color: azure;
+    border: 3px solid black;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color: aqua;
+}
+#para{
+    font-family: 'Kolker Brush', cursive;
+    font-size: 30px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    /* transition: width 2s; */
+    /* border-radius: 50%; */
+    margin: 10px;
+
+}
+.box:hover{
+    width: 300px;
+}
+@media screen and (min-width:300px) and (max-width:1000px){
+    .box{
+        background-color: rgb(118, 165, 42);
+    }
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    /* transition: width 2s; */
+     border-radius: 50%; 
+    animation-name: exapmle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    0%{
+        
+    }
+}
+.video{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(43, 46, 226, 0.596);
+    animation: 5s animation infinite;
+}
+@keyframes animation  {
+       0%{
+        transform: translate(0, 0);
+        background-color: green;
+        transform: rotate(45deg);
+       }
+       25%{
+        transform: translate(20em, 20em);
+        background-color: blueviolet;
+
+       }
+       75%{
+        transform: translate(0, 20em);
+        background-color: black;
+
+       }
+       100%{
+        transform: translate(0, 0);
+        background-color: yellow;
+       }
+}
